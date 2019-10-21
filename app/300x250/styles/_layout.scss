@@ -17,6 +17,14 @@ body {
     height: $banner-height;
     opacity: 0;
 
+    #offer1 {
+        clip: rect(0px,152px,20px,0px);
+    }
+
+    #offer2 {
+        clip: rect(20px,152px,112px,0px);
+    }
+
     #button-exit {
         background-color: rgba(255, 255, 255, 0);
         cursor: pointer;
@@ -32,17 +40,5 @@ body {
 		outline: solid 1px #ccc;
   		outline-offset: -1px;
 		z-index: 999;
-    }
-
-    #title {
-        font-size: 40px;
-        line-height: 1;
-        letter-spacing: -1px;
-        color: #ff0000;
-        text-align: center;
-    }
-
-    #caption {
-        text-align: center;
     }
 }
