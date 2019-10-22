@@ -9,6 +9,7 @@ app.Animation = (function () {
 	var offer1 = document.getElementById('offer1');
 	var offer2 = document.getElementById('offer2');
 	var app = document.getElementById('app');
+	var txt = document.getElementById('txt');
 
 	// --------------------------------------------------------------------------------------
 	// set default properties
@@ -24,7 +25,9 @@ app.Animation = (function () {
 	function start() {
 		tl1.from(offer1, .5, {x:"-=200", ease: Expo.easeOut}, "+=.5")
 		.from(offer2, .5, {x:"-=200", ease: Expo.easeOut}, "+=.5")
-		.from(app, .5, {x:"-=200", ease: Expo.easeOut}, "+=.5");
+		.from(txt, .5, {x:"-=200", ease: Expo.easeOut}, "+=.5")
+		.to(txt, .5, {x:"-=200", ease: Expo.easeIn}, "+=2")
+		.from(app, .5, {x:"-=200", ease: Expo.easeOut});
 	}
 
 	// --------------------------------------------------------------------------------------
