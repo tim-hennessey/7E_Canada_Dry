@@ -26,7 +26,7 @@ app.Animation = (function () {
 		tl1.from(offer1, .5, {x:"-=200", ease: Expo.easeOut}, "+=.5")
 		.from(offer2, .5, {x:"-=200", ease: Expo.easeOut}, "+=.5")
 		.from(txt, .5, {x:"-=200", ease: Expo.easeOut}, "+=.5")
-		.to(txt, .5, {x:"-=200", ease: Expo.easeIn}, "+=2")
+		.to(txt, .5, {x:"-=200", ease: Expo.easeIn}, "+=1.5")
 		.from(app, .5, {x:"-=200", ease: Expo.easeOut});
 	}
 
